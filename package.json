@@ -1,0 +1,15 @@
+{
+  "name": "clock-app-3",
+  "source": "src/index.html",
+  "browserlist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}

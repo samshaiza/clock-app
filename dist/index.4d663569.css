@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  display: flex;
+}
+
+.container {
+  text-align: right;
+  transition: all .6s;
+}
+
+.time-zone-display {
+  color: #808080cc;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: all 80ms;
+}
+
+.time-zone-display:hover {
+  opacity: .4;
+}
+
+.time-display {
+  font-size: 10rem;
+}
+
+.date-display {
+  font-size: 4rem;
+}
+
+.modal {
+  z-index: 3;
+  background-color: #0009;
+  width: 100%;
+  height: 100%;
+  animation-name: fadeIn;
+  animation-duration: .4s;
+  position: fixed;
+  overflow: auto;
+}
+
+.time-zone-dropdown {
+  background-color: #e3e3e3;
+  width: 700px;
+  height: 450px;
+  transition: all .6s;
+  animation-name: slideIn;
+  animation-duration: .4s;
+  display: inline-block;
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+
+.menu-name {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  padding-right: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.time-zone-form {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.time-zone-label {
+  font-size: 1rem;
+}
+
+.time-zone-opt {
+  color: #525252;
+  background: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.submit-btn {
+  cursor: pointer;
+  background: #d2d2d2;
+  border: none;
+  border-radius: 4px;
+  margin-left: 3.3rem;
+  padding: 2px 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .2s;
+  box-shadow: 1px 0 2px #0006;
+}
+
+.submit-btn:hover {
+  color: #494949;
+  opacity: .6;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    bottom: -300px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
